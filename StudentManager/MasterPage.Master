@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="StudentManager.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Menu ID="Menu1" runat="server">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/AddStudent.aspx" Text="Add student" Value="Add student"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewAllStudent.aspx" Text="View student" Value="View student"></asp:MenuItem>
+                    <asp:MenuItem Text="Edit student" Value="Edit student" NavigateUrl="~/EditStudent.aspx"></asp:MenuItem>
+                </Items>
+        </asp:Menu>
+        </div>
+    <div>
+        <p>
+                Welcome Back : Mallesh</p>
+        <p>
+                &nbsp;</p>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+    </form>
+</body>
+</html>
